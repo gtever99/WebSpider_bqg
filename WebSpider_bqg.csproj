@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AngleSharp" Version="1.0.7" />
+      <PackageReference Include="AntDesign" Version="0.17.2" />
+      <PackageReference Include="RestSharp" Version="110.2.1-alpha.0.16" />
+      <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Components\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Layout\MainLayout.razor" />
+      <AdditionalFiles Include="Layout\NavMenu.razor" />
+      <AdditionalFiles Include="Pages\App.razor" />
+      <AdditionalFiles Include="Pages\Routes.razor" />
+      <AdditionalFiles Include="Pages\_Imports.razor" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Components\Pages\App.razor" />
+      <_ContentIncludedByDefault Remove="Components\Pages\Routes.razor" />
+      <_ContentIncludedByDefault Remove="Components\Pages\SearchPage\SearchPage.razor" />
+      <_ContentIncludedByDefault Remove="Components\Pages\_Imports.razor" />
+    </ItemGroup>
+
+</Project>
